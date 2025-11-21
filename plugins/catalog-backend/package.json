@@ -73,6 +73,7 @@
     "@backstage/plugin-events-node": "workspace:^",
     "@backstage/plugin-permission-common": "workspace:^",
     "@backstage/plugin-permission-node": "workspace:^",
+    "@backstage/plugin-techdocs-common": "workspace:^",
     "@backstage/types": "workspace:^",
     "@opentelemetry/api": "^1.9.0",
     "codeowners-utils": "^1.0.2",
