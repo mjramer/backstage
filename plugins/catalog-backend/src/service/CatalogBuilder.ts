@@ -84,6 +84,7 @@ import { DefaultCatalogProcessingEngine } from '../processing/DefaultCatalogProc
 import { DefaultCatalogProcessingOrchestrator } from '../processing/DefaultCatalogProcessingOrchestrator';
 import {
   AnnotateLocationEntityProcessor,
+  AnnotateTechDocsEntityProcessor,
   BuiltinKindsEntityProcessor,
   FileReaderProcessor,
   PlaceholderProcessor,
@@ -332,7 +333,9 @@ export class CatalogBuilder {
     return [
       new FileReaderProcessor(),
       new UrlReaderProcessor({ reader, logger }),
+      new UrlReaderProcessor({ reader, logger }),
       new AnnotateLocationEntityProcessor({ integrations }),
+      new AnnotateTechDocsEntityProcessor(),
     ];
   }
 

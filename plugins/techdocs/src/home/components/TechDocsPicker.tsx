@@ -16,17 +16,15 @@
 
 import { useEffect } from 'react';
 import {
-  CATALOG_FILTER_EXISTS,
   DefaultEntityFilters,
   EntityFilter,
   useEntityList,
 } from '@backstage/plugin-catalog-react';
-import { TECHDOCS_ANNOTATION } from '@backstage/plugin-techdocs-common';
 
 class TechDocsFilter implements EntityFilter {
   getCatalogFilters(): Record<string, string | symbol | (string | symbol)[]> {
     return {
-      [`metadata.annotations.${TECHDOCS_ANNOTATION}`]: CATALOG_FILTER_EXISTS,
+      'metadata.annotations.backstage.io/techdocs-exists': 'true',
     };
   }
 }

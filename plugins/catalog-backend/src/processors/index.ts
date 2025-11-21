@@ -23,3 +23,4 @@ export { PlaceholderProcessor } from './PlaceholderProcessor';
 export type { PlaceholderProcessorOptions } from './PlaceholderProcessor';
 export { UrlReaderProcessor } from './UrlReaderProcessor';
 export { transformLegacyPolicyToProcessor } from './transformLegacyPolicyToProcessor';
+export { AnnotateTechDocsEntityProcessor } from './AnnotateTechDocsEntityProcessor';
